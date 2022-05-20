@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E0A1B212822AD9F001C1041 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0A1B202822AD9F001C1041 /* CloudKit.framework */; };
+		4E90460828227C5D0001F9F3 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90460728227C5D0001F9F3 /* Tests_iOS.swift */; };
+		4E90460A28227C5D0001F9F3 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90460928227C5D0001F9F3 /* Tests_iOSLaunchTests.swift */; };
+		4E90461428227C5D0001F9F3 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90461328227C5D0001F9F3 /* Tests_macOS.swift */; };
+		4E90461628227C5D0001F9F3 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90461528227C5D0001F9F3 /* Tests_macOSLaunchTests.swift */; };
+		4E90461728227C5D0001F9F3 /* KanaKana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E9045EC28227C5B0001F9F3 /* KanaKana.xcdatamodeld */; };
+		4E90461828227C5D0001F9F3 /* KanaKana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E9045EC28227C5B0001F9F3 /* KanaKana.xcdatamodeld */; };
+		4E90461928227C5D0001F9F3 /* KanaConsoleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9045EE28227C5B0001F9F3 /* KanaConsoleApp.swift */; };
+		4E90461A28227C5D0001F9F3 /* KanaConsoleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9045EE28227C5B0001F9F3 /* KanaConsoleApp.swift */; };
+		4E90461B28227C5D0001F9F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9045EF28227C5B0001F9F3 /* ContentView.swift */; };
+		4E90461C28227C5D0001F9F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9045EF28227C5B0001F9F3 /* ContentView.swift */; };
+		4E90461D28227C5D0001F9F3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9045F028227C5B0001F9F3 /* Persistence.swift */; };
+		4E90461E28227C5D0001F9F3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9045F028227C5B0001F9F3 /* Persistence.swift */; };
+		4E90461F28227C5D0001F9F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9045F128227C5D0001F9F3 /* Assets.xcassets */; };
+		4E90462028227C5D0001F9F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9045F128227C5D0001F9F3 /* Assets.xcassets */; };
+		4E92CF2528284D9000822BDB /* TestItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92CF2328284B2D00822BDB /* TestItem+CoreDataClass.swift */; };
+		4E92CF2628284D9000822BDB /* TestItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92CF2328284B2D00822BDB /* TestItem+CoreDataClass.swift */; };
+		4E92CF2728284D9400822BDB /* TestItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92CF2428284B2D00822BDB /* TestItem+CoreDataProperties.swift */; };
+		4E92CF2828284D9500822BDB /* TestItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92CF2428284B2D00822BDB /* TestItem+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E90460428227C5D0001F9F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E9045E728227C5B0001F9F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E9045F528227C5D0001F9F3;
+			remoteInfo = "KanaConsole (iOS)";
+		};
+		4E90461028227C5D0001F9F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E9045E728227C5B0001F9F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E9045FB28227C5D0001F9F3;
+			remoteInfo = "KanaConsole (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E0A1B1E2822AD7D001C1041 /* KanaConsole (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "KanaConsole (iOS).entitlements"; sourceTree = "<group>"; };
+		4E0A1B202822AD9F001C1041 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		4E9045ED28227C5B0001F9F3 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
+		4E9045EE28227C5B0001F9F3 /* KanaConsoleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaConsoleApp.swift; sourceTree = "<group>"; };
+		4E9045EF28227C5B0001F9F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4E9045F028227C5B0001F9F3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Persistence.swift; path = ../../KanaShared/Persistence.swift; sourceTree = "<group>"; };
+		4E9045F128227C5D0001F9F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E9045F628227C5D0001F9F3 /* KanaConsole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanaConsole.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E9045FC28227C5D0001F9F3 /* KanaConsole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanaConsole.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E9045FE28227C5D0001F9F3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		4E90460328227C5D0001F9F3 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E90460728227C5D0001F9F3 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		4E90460928227C5D0001F9F3 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		4E90460F28227C5D0001F9F3 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E90461328227C5D0001F9F3 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		4E90461528227C5D0001F9F3 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		4E92CF1E2826A81D00822BDB /* KanaConsole--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "KanaConsole--iOS--Info.plist"; sourceTree = "<group>"; };
+		4E92CF2328284B2D00822BDB /* TestItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TestItem+CoreDataClass.swift"; path = "../KanaShared/TestItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4E92CF2428284B2D00822BDB /* TestItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TestItem+CoreDataProperties.swift"; path = "../KanaShared/TestItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E9045F328227C5D0001F9F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0A1B212822AD9F001C1041 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E9045F928227C5D0001F9F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E90460028227C5D0001F9F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E90460C28227C5D0001F9F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E0A1B1F2822AD9F001C1041 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E0A1B202822AD9F001C1041 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E9045E628227C5B0001F9F3 = {
+			isa = PBXGroup;
+			children = (
+				4E92CF2328284B2D00822BDB /* TestItem+CoreDataClass.swift */,
+				4E92CF2428284B2D00822BDB /* TestItem+CoreDataProperties.swift */,
+				4E92CF1E2826A81D00822BDB /* KanaConsole--iOS--Info.plist */,
+				4E0A1B1E2822AD7D001C1041 /* KanaConsole (iOS).entitlements */,
+				4E9045EB28227C5B0001F9F3 /* Shared */,
+				4E9045FD28227C5D0001F9F3 /* macOS */,
+				4E90460628227C5D0001F9F3 /* Tests iOS */,
+				4E90461228227C5D0001F9F3 /* Tests macOS */,
+				4E9045F728227C5D0001F9F3 /* Products */,
+				4E0A1B1F2822AD9F001C1041 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4E9045EB28227C5B0001F9F3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4E9045EE28227C5B0001F9F3 /* KanaConsoleApp.swift */,
+				4E9045EF28227C5B0001F9F3 /* ContentView.swift */,
+				4E9045F028227C5B0001F9F3 /* Persistence.swift */,
+				4E9045F128227C5D0001F9F3 /* Assets.xcassets */,
+				4E9045EC28227C5B0001F9F3 /* KanaKana.xcdatamodeld */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4E9045F728227C5D0001F9F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E9045F628227C5D0001F9F3 /* KanaConsole.app */,
+				4E9045FC28227C5D0001F9F3 /* KanaConsole.app */,
+				4E90460328227C5D0001F9F3 /* Tests iOS.xctest */,
+				4E90460F28227C5D0001F9F3 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E9045FD28227C5D0001F9F3 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E9045FE28227C5D0001F9F3 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		4E90460628227C5D0001F9F3 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E90460728227C5D0001F9F3 /* Tests_iOS.swift */,
+				4E90460928227C5D0001F9F3 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		4E90461228227C5D0001F9F3 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E90461328227C5D0001F9F3 /* Tests_macOS.swift */,
+				4E90461528227C5D0001F9F3 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E9045F528227C5D0001F9F3 /* KanaConsole (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E90462328227C5D0001F9F3 /* Build configuration list for PBXNativeTarget "KanaConsole (iOS)" */;
+			buildPhases = (
+				4E9045F228227C5D0001F9F3 /* Sources */,
+				4E9045F328227C5D0001F9F3 /* Frameworks */,
+				4E9045F428227C5D0001F9F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KanaConsole (iOS)";
+			productName = "KanaConsole (iOS)";
+			productReference = 4E9045F628227C5D0001F9F3 /* KanaConsole.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E9045FB28227C5D0001F9F3 /* KanaConsole (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E90462628227C5D0001F9F3 /* Build configuration list for PBXNativeTarget "KanaConsole (macOS)" */;
+			buildPhases = (
+				4E9045F828227C5D0001F9F3 /* Sources */,
+				4E9045F928227C5D0001F9F3 /* Frameworks */,
+				4E9045FA28227C5D0001F9F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KanaConsole (macOS)";
+			productName = "KanaConsole (macOS)";
+			productReference = 4E9045FC28227C5D0001F9F3 /* KanaConsole.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E90460228227C5D0001F9F3 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E90462928227C5D0001F9F3 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				4E9045FF28227C5D0001F9F3 /* Sources */,
+				4E90460028227C5D0001F9F3 /* Frameworks */,
+				4E90460128227C5D0001F9F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E90460528227C5D0001F9F3 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 4E90460328227C5D0001F9F3 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		4E90460E28227C5D0001F9F3 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E90462C28227C5D0001F9F3 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				4E90460B28227C5D0001F9F3 /* Sources */,
+				4E90460C28227C5D0001F9F3 /* Frameworks */,
+				4E90460D28227C5D0001F9F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E90461128227C5D0001F9F3 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 4E90460F28227C5D0001F9F3 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E9045E728227C5B0001F9F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					4E9045F528227C5D0001F9F3 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					4E9045FB28227C5D0001F9F3 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					4E90460228227C5D0001F9F3 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 4E9045F528227C5D0001F9F3;
+					};
+					4E90460E28227C5D0001F9F3 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 4E9045FB28227C5D0001F9F3;
+					};
+				};
+			};
+			buildConfigurationList = 4E9045EA28227C5B0001F9F3 /* Build configuration list for PBXProject "KanaConsole" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E9045E628227C5B0001F9F3;
+			productRefGroup = 4E9045F728227C5D0001F9F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E9045F528227C5D0001F9F3 /* KanaConsole (iOS) */,
+				4E9045FB28227C5D0001F9F3 /* KanaConsole (macOS) */,
+				4E90460228227C5D0001F9F3 /* Tests iOS */,
+				4E90460E28227C5D0001F9F3 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E9045F428227C5D0001F9F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E90461F28227C5D0001F9F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E9045FA28227C5D0001F9F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E90462028227C5D0001F9F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E90460128227C5D0001F9F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E90460D28227C5D0001F9F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E9045F228227C5D0001F9F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E90461928227C5D0001F9F3 /* KanaConsoleApp.swift in Sources */,
+				4E92CF2528284D9000822BDB /* TestItem+CoreDataClass.swift in Sources */,
+				4E90461D28227C5D0001F9F3 /* Persistence.swift in Sources */,
+				4E90461728227C5D0001F9F3 /* KanaKana.xcdatamodeld in Sources */,
+				4E92CF2728284D9400822BDB /* TestItem+CoreDataProperties.swift in Sources */,
+				4E90461B28227C5D0001F9F3 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E9045F828227C5D0001F9F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E90461A28227C5D0001F9F3 /* KanaConsoleApp.swift in Sources */,
+				4E92CF2628284D9000822BDB /* TestItem+CoreDataClass.swift in Sources */,
+				4E90461E28227C5D0001F9F3 /* Persistence.swift in Sources */,
+				4E90461828227C5D0001F9F3 /* KanaKana.xcdatamodeld in Sources */,
+				4E92CF2828284D9500822BDB /* TestItem+CoreDataProperties.swift in Sources */,
+				4E90461C28227C5D0001F9F3 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E9045FF28227C5D0001F9F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E90460A28227C5D0001F9F3 /* Tests_iOSLaunchTests.swift in Sources */,
+				4E90460828227C5D0001F9F3 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E90460B28227C5D0001F9F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E90461628227C5D0001F9F3 /* Tests_macOSLaunchTests.swift in Sources */,
+				4E90461428227C5D0001F9F3 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E90460528227C5D0001F9F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E9045F528227C5D0001F9F3 /* KanaConsole (iOS) */;
+			targetProxy = 4E90460428227C5D0001F9F3 /* PBXContainerItemProxy */;
+		};
+		4E90461128227C5D0001F9F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E9045FB28227C5D0001F9F3 /* KanaConsole (macOS) */;
+			targetProxy = 4E90461028227C5D0001F9F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4E90462128227C5D0001F9F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E90462228227C5D0001F9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4E90462428227C5D0001F9F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "KanaConsole (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A743G3S42;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KanaConsole--iOS--Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Magenta.KanaConsole;
+				PRODUCT_NAME = KanaConsole;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E90462528227C5D0001F9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "KanaConsole (iOS).entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A743G3S42;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "KanaConsole--iOS--Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Magenta.KanaConsole;
+				PRODUCT_NAME = KanaConsole;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E90462728227C5D0001F9F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A743G3S42;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Magenta.KanaConsole;
+				PRODUCT_NAME = KanaConsole;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4E90462828227C5D0001F9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A743G3S42;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Magenta.KanaConsole;
+				PRODUCT_NAME = KanaConsole;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4E90462A28227C5D0001F9F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A743G3S42;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Magenta.KanaConsole.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KanaConsole (iOS)";
+			};
+			name = Debug;
+		};
+		4E90462B28227C5D0001F9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A743G3S42;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Magenta.KanaConsole.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "KanaConsole (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E90462D28227C5D0001F9F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A743G3S42;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Magenta.KanaConsole.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "KanaConsole (macOS)";
+			};
+			name = Debug;
+		};
+		4E90462E28227C5D0001F9F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A743G3S42;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Magenta.KanaConsole.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "KanaConsole (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E9045EA28227C5B0001F9F3 /* Build configuration list for PBXProject "KanaConsole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E90462128227C5D0001F9F3 /* Debug */,
+				4E90462228227C5D0001F9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E90462328227C5D0001F9F3 /* Build configuration list for PBXNativeTarget "KanaConsole (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E90462428227C5D0001F9F3 /* Debug */,
+				4E90462528227C5D0001F9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E90462628227C5D0001F9F3 /* Build configuration list for PBXNativeTarget "KanaConsole (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E90462728227C5D0001F9F3 /* Debug */,
+				4E90462828227C5D0001F9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E90462928227C5D0001F9F3 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E90462A28227C5D0001F9F3 /* Debug */,
+				4E90462B28227C5D0001F9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E90462C28227C5D0001F9F3 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E90462D28227C5D0001F9F3 /* Debug */,
+				4E90462E28227C5D0001F9F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4E9045EC28227C5B0001F9F3 /* KanaKana.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4E9045ED28227C5B0001F9F3 /* Shared.xcdatamodel */,
+			);
+			currentVersion = 4E9045ED28227C5B0001F9F3 /* Shared.xcdatamodel */;
+			path = KanaKana.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4E9045E728227C5B0001F9F3 /* Project object */;
+}

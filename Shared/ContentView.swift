@@ -16,7 +16,7 @@ struct ContentView: View {
         animation: .default)
     private var items: FetchedResults<TestItem>
     
-    @State private var sortOrder = [KeyPathComparator(\TestItem.rightanswer)]
+//    @State private var sortOrder = [KeyPathComparator(\TestItem.rightanswer)]
     
 #if os(macOS)
     @State private var selection: Set<TestItem.ID> = []
@@ -37,17 +37,18 @@ struct ContentView: View {
                     Text("N/A")
                 }
             }
-            TableColumn("rightanswer") { item in Text("\(item.rightanswer.description)") }
+            TableColumn("rightanswer") { item in
+                Text("\(item.rightanswer)")
+            }
             TableColumn("givenanswer") { item in
-                Text("\(item.givenanswer.description)")
+                Text("\(item.givenanswer)")
                     .foregroundColor(item.givenanswer == item.rightanswer ? Color.primary : Color.red)
             }
             TableColumn("choices") { item in
-                Text("\(item.choices.description)")
-                
+                Text("\(item.altanswer0), \(item.altanswer1), \(item.altanswer2)")
             }
             TableColumn("mode") { item in
-                Text("\(item.mode.description)")
+                Text("\(item.mode.rawValue)")
                 
             }
         }
@@ -169,17 +170,10 @@ private let itemFormatter: DateFormatter = {
     return formatter
 }()
 
-public enum KanaMode: Int, Codable, CaseIterable {
-    case H2R, K2R, R2H, R2K, H2K, K2H
-    static let hiraganaModes: Set<KanaMode> = [H2R, R2H, H2K]
-    static let katakanaModes: Set<KanaMode> = [K2R, R2K, K2H]
-    static func random() -> KanaMode { allCases.randomElement()! }
-    var description: String { String(describing: self) }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewLayout(.sizeThatFits)
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

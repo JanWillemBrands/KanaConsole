@@ -26,6 +26,10 @@
 		4E92CF2628284D9000822BDB /* TestItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92CF2328284B2D00822BDB /* TestItem+CoreDataClass.swift */; };
 		4E92CF2728284D9400822BDB /* TestItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92CF2428284B2D00822BDB /* TestItem+CoreDataProperties.swift */; };
 		4E92CF2828284D9500822BDB /* TestItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92CF2428284B2D00822BDB /* TestItem+CoreDataProperties.swift */; };
+		4EEDCCA32838FE1600CC53A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDCCA12838FE1600CC53A6 /* Constants.swift */; };
+		4EEDCCA42838FE1600CC53A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDCCA12838FE1600CC53A6 /* Constants.swift */; };
+		4EEDCCA52838FE1600CC53A6 /* GradientDescent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDCCA22838FE1600CC53A6 /* GradientDescent.swift */; };
+		4EEDCCA62838FE1600CC53A6 /* GradientDescent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDCCA22838FE1600CC53A6 /* GradientDescent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +55,7 @@
 		4E9045ED28227C5B0001F9F3 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		4E9045EE28227C5B0001F9F3 /* KanaConsoleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaConsoleApp.swift; sourceTree = "<group>"; };
 		4E9045EF28227C5B0001F9F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		4E9045F028227C5B0001F9F3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Persistence.swift; path = ../../KanaShared/Persistence.swift; sourceTree = "<group>"; };
+		4E9045F028227C5B0001F9F3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Persistence.swift; path = ../../KanaKana/KanaKana/Persistence.swift; sourceTree = "<group>"; };
 		4E9045F128227C5D0001F9F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E9045F628227C5D0001F9F3 /* KanaConsole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanaConsole.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9045FC28227C5D0001F9F3 /* KanaConsole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanaConsole.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,8 +67,10 @@
 		4E90461328227C5D0001F9F3 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		4E90461528227C5D0001F9F3 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		4E92CF1E2826A81D00822BDB /* KanaConsole--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "KanaConsole--iOS--Info.plist"; sourceTree = "<group>"; };
-		4E92CF2328284B2D00822BDB /* TestItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TestItem+CoreDataClass.swift"; path = "../KanaShared/TestItem+CoreDataClass.swift"; sourceTree = "<group>"; };
-		4E92CF2428284B2D00822BDB /* TestItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TestItem+CoreDataProperties.swift"; path = "../KanaShared/TestItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4E92CF2328284B2D00822BDB /* TestItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TestItem+CoreDataClass.swift"; path = "../KanaKana/TestItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4E92CF2428284B2D00822BDB /* TestItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TestItem+CoreDataProperties.swift"; path = "../KanaKana/TestItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4EEDCCA12838FE1600CC53A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../../KanaKana/KanaKana/Constants.swift; sourceTree = "<group>"; };
+		4EEDCCA22838FE1600CC53A6 /* GradientDescent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientDescent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,8 @@
 			children = (
 				4E9045EE28227C5B0001F9F3 /* KanaConsoleApp.swift */,
 				4E9045EF28227C5B0001F9F3 /* ContentView.swift */,
+				4EEDCCA12838FE1600CC53A6 /* Constants.swift */,
+				4EEDCCA22838FE1600CC53A6 /* GradientDescent.swift */,
 				4E9045F028227C5B0001F9F3 /* Persistence.swift */,
 				4E9045F128227C5D0001F9F3 /* Assets.xcassets */,
 				4E9045EC28227C5B0001F9F3 /* KanaKana.xcdatamodeld */,
@@ -335,6 +343,8 @@
 				4E92CF2528284D9000822BDB /* TestItem+CoreDataClass.swift in Sources */,
 				4E90461D28227C5D0001F9F3 /* Persistence.swift in Sources */,
 				4E90461728227C5D0001F9F3 /* KanaKana.xcdatamodeld in Sources */,
+				4EEDCCA52838FE1600CC53A6 /* GradientDescent.swift in Sources */,
+				4EEDCCA32838FE1600CC53A6 /* Constants.swift in Sources */,
 				4E92CF2728284D9400822BDB /* TestItem+CoreDataProperties.swift in Sources */,
 				4E90461B28227C5D0001F9F3 /* ContentView.swift in Sources */,
 			);
@@ -348,6 +358,8 @@
 				4E92CF2628284D9000822BDB /* TestItem+CoreDataClass.swift in Sources */,
 				4E90461E28227C5D0001F9F3 /* Persistence.swift in Sources */,
 				4E90461828227C5D0001F9F3 /* KanaKana.xcdatamodeld in Sources */,
+				4EEDCCA62838FE1600CC53A6 /* GradientDescent.swift in Sources */,
+				4EEDCCA42838FE1600CC53A6 /* Constants.swift in Sources */,
 				4E92CF2828284D9500822BDB /* TestItem+CoreDataProperties.swift in Sources */,
 				4E90461C28227C5D0001F9F3 /* ContentView.swift in Sources */,
 			);

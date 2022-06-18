@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E0A1B212822AD9F001C1041 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0A1B202822AD9F001C1041 /* CloudKit.framework */; };
 		4E90460828227C5D0001F9F3 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90460728227C5D0001F9F3 /* Tests_iOS.swift */; };
 		4E90460A28227C5D0001F9F3 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90460928227C5D0001F9F3 /* Tests_iOSLaunchTests.swift */; };
 		4E90461428227C5D0001F9F3 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90461328227C5D0001F9F3 /* Tests_macOS.swift */; };
@@ -18,14 +17,14 @@
 		4E90461A28227C5D0001F9F3 /* KanaConsoleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9045EE28227C5B0001F9F3 /* KanaConsoleApp.swift */; };
 		4E90461B28227C5D0001F9F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9045EF28227C5B0001F9F3 /* ContentView.swift */; };
 		4E90461C28227C5D0001F9F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9045EF28227C5B0001F9F3 /* ContentView.swift */; };
-		4E90461D28227C5D0001F9F3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9045F028227C5B0001F9F3 /* Persistence.swift */; };
-		4E90461E28227C5D0001F9F3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9045F028227C5B0001F9F3 /* Persistence.swift */; };
 		4E90461F28227C5D0001F9F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9045F128227C5D0001F9F3 /* Assets.xcassets */; };
 		4E90462028227C5D0001F9F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9045F128227C5D0001F9F3 /* Assets.xcassets */; };
 		4E92CF2528284D9000822BDB /* TestItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92CF2328284B2D00822BDB /* TestItem+CoreDataClass.swift */; };
 		4E92CF2628284D9000822BDB /* TestItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92CF2328284B2D00822BDB /* TestItem+CoreDataClass.swift */; };
 		4E92CF2728284D9400822BDB /* TestItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92CF2428284B2D00822BDB /* TestItem+CoreDataProperties.swift */; };
 		4E92CF2828284D9500822BDB /* TestItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92CF2428284B2D00822BDB /* TestItem+CoreDataProperties.swift */; };
+		4ED3CD602B628B7900DA8DB9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED3CD5F2B628B7900DA8DB9 /* Persistence.swift */; };
+		4ED3CD612B628B7900DA8DB9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED3CD5F2B628B7900DA8DB9 /* Persistence.swift */; };
 		4EEDCCA32838FE1600CC53A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDCCA12838FE1600CC53A6 /* Constants.swift */; };
 		4EEDCCA42838FE1600CC53A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDCCA12838FE1600CC53A6 /* Constants.swift */; };
 		4EEDCCA52838FE1600CC53A6 /* GradientDescent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEDCCA22838FE1600CC53A6 /* GradientDescent.swift */; };
@@ -51,11 +50,9 @@
 
 /* Begin PBXFileReference section */
 		4E0A1B1E2822AD7D001C1041 /* KanaConsole (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "KanaConsole (iOS).entitlements"; sourceTree = "<group>"; };
-		4E0A1B202822AD9F001C1041 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.4.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		4E9045ED28227C5B0001F9F3 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		4E9045EE28227C5B0001F9F3 /* KanaConsoleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanaConsoleApp.swift; sourceTree = "<group>"; };
 		4E9045EF28227C5B0001F9F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		4E9045F028227C5B0001F9F3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Persistence.swift; path = ../../KanaKana/KanaKana/Persistence.swift; sourceTree = "<group>"; };
 		4E9045F128227C5D0001F9F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E9045F628227C5D0001F9F3 /* KanaConsole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanaConsole.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9045FC28227C5D0001F9F3 /* KanaConsole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanaConsole.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +66,7 @@
 		4E92CF1E2826A81D00822BDB /* KanaConsole--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "KanaConsole--iOS--Info.plist"; sourceTree = "<group>"; };
 		4E92CF2328284B2D00822BDB /* TestItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TestItem+CoreDataClass.swift"; path = "../KanaKana/TestItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4E92CF2428284B2D00822BDB /* TestItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TestItem+CoreDataProperties.swift"; path = "../KanaKana/TestItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4ED3CD5F2B628B7900DA8DB9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		4EEDCCA12838FE1600CC53A6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../../KanaKana/KanaKana/Constants.swift; sourceTree = "<group>"; };
 		4EEDCCA22838FE1600CC53A6 /* GradientDescent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientDescent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +76,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E0A1B212822AD9F001C1041 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +106,6 @@
 		4E0A1B1F2822AD9F001C1041 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4E0A1B202822AD9F001C1041 /* CloudKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,8 +117,8 @@
 				4E92CF2428284B2D00822BDB /* TestItem+CoreDataProperties.swift */,
 				4E92CF1E2826A81D00822BDB /* KanaConsole--iOS--Info.plist */,
 				4E0A1B1E2822AD7D001C1041 /* KanaConsole (iOS).entitlements */,
+				4E9045FE28227C5D0001F9F3 /* macOS.entitlements */,
 				4E9045EB28227C5B0001F9F3 /* Shared */,
-				4E9045FD28227C5D0001F9F3 /* macOS */,
 				4E90460628227C5D0001F9F3 /* Tests iOS */,
 				4E90461228227C5D0001F9F3 /* Tests macOS */,
 				4E9045F728227C5D0001F9F3 /* Products */,
@@ -137,7 +133,7 @@
 				4E9045EF28227C5B0001F9F3 /* ContentView.swift */,
 				4EEDCCA12838FE1600CC53A6 /* Constants.swift */,
 				4EEDCCA22838FE1600CC53A6 /* GradientDescent.swift */,
-				4E9045F028227C5B0001F9F3 /* Persistence.swift */,
+				4ED3CD5F2B628B7900DA8DB9 /* Persistence.swift */,
 				4E9045F128227C5D0001F9F3 /* Assets.xcassets */,
 				4E9045EC28227C5B0001F9F3 /* KanaKana.xcdatamodeld */,
 			);
@@ -153,14 +149,6 @@
 				4E90460F28227C5D0001F9F3 /* Tests macOS.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4E9045FD28227C5D0001F9F3 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				4E9045FE28227C5D0001F9F3 /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		4E90460628227C5D0001F9F3 /* Tests iOS */ = {
@@ -262,7 +250,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					4E9045F528227C5D0001F9F3 = {
 						CreatedOnToolsVersion = 13.3.1;
@@ -341,11 +329,11 @@
 			files = (
 				4E90461928227C5D0001F9F3 /* KanaConsoleApp.swift in Sources */,
 				4E92CF2528284D9000822BDB /* TestItem+CoreDataClass.swift in Sources */,
-				4E90461D28227C5D0001F9F3 /* Persistence.swift in Sources */,
 				4E90461728227C5D0001F9F3 /* KanaKana.xcdatamodeld in Sources */,
 				4EEDCCA52838FE1600CC53A6 /* GradientDescent.swift in Sources */,
 				4EEDCCA32838FE1600CC53A6 /* Constants.swift in Sources */,
 				4E92CF2728284D9400822BDB /* TestItem+CoreDataProperties.swift in Sources */,
+				4ED3CD602B628B7900DA8DB9 /* Persistence.swift in Sources */,
 				4E90461B28227C5D0001F9F3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,11 +344,11 @@
 			files = (
 				4E90461A28227C5D0001F9F3 /* KanaConsoleApp.swift in Sources */,
 				4E92CF2628284D9000822BDB /* TestItem+CoreDataClass.swift in Sources */,
-				4E90461E28227C5D0001F9F3 /* Persistence.swift in Sources */,
 				4E90461828227C5D0001F9F3 /* KanaKana.xcdatamodeld in Sources */,
 				4EEDCCA62838FE1600CC53A6 /* GradientDescent.swift in Sources */,
 				4EEDCCA42838FE1600CC53A6 /* Constants.swift in Sources */,
 				4E92CF2828284D9500822BDB /* TestItem+CoreDataProperties.swift in Sources */,
+				4ED3CD612B628B7900DA8DB9 /* Persistence.swift in Sources */,
 				4E90461C28227C5D0001F9F3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -432,9 +421,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -461,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -490,9 +482,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -525,11 +519,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Magenta.KanaConsole;
 				PRODUCT_NAME = KanaConsole;
@@ -557,11 +552,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Magenta.KanaConsole;
 				PRODUCT_NAME = KanaConsole;
@@ -578,24 +574,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = macOS.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3A743G3S42;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Magenta.KanaConsole;
 				PRODUCT_NAME = KanaConsole;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -607,24 +607,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = macOS.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3A743G3S42;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Magenta.KanaConsole;
 				PRODUCT_NAME = KanaConsole;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -678,6 +682,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3A743G3S42;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -697,6 +702,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3A743G3S42;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;

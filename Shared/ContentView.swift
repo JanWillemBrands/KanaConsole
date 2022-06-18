@@ -11,17 +11,13 @@ import CoreData
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \TestItem.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<TestItem>
+    @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \TestItem.timestamp, ascending: true)]) private var items: FetchedResults<TestItem>
     
-//    @State private var sortOrder = [KeyPathComparator(\TestItem.rightanswer)]
-    
-#if os(macOS)
     @State private var selection: Set<TestItem.ID> = []
     
     var body: some View {
+        
+#if os(macOS)
         Table(items, selection: $selection) {
             TableColumn("session") { item in
                 if let s = item.session {
@@ -52,7 +48,10 @@ struct ContentView: View {
                 
             }
         }
+        
         .contextMenu { Button("Delete") { deleteSelection() } }
+        
+        .onDeleteCommand { deleteSelection() }
         
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
@@ -68,26 +67,24 @@ struct ContentView: View {
             }
         }
         
-        .onDeleteCommand { deleteSelection() }
-    }
 #elseif os(iOS)
-    @State private var selection: Set<TestItem.ID> = []
-    
-    var body: some View {
         NavigationView {
             List(selection: $selection) {
                 ForEach(items, id: \.self) { item in
-//                    Text("\(item.timestamp!, formatter: itemFormatter)")
-                                        NavigationLink {
-                                            Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                                        } label: {
-                                            Text(item.timestamp!, formatter: itemFormatter)
-                                        }
+                    //                    Text("\(item.timestamp!, formatter: itemFormatter)")
+                    NavigationLink {
+                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                    } label: {
+                        Text(item.timestamp!, formatter: itemFormatter)
+                    }
+                }
+                .onDelete { indexes in
+                    deleteItems(indexes)
                 }
             }
+            
             .navigationTitle("Test History")
-//            .onDelete(perform: deleteItems)
-
+            
             .toolbar {
                 ToolbarItem(placement: .primaryAction) {
                     Button(action: addItem) {
@@ -95,7 +92,7 @@ struct ContentView: View {
                     }
                 }
                 ToolbarItem(placement: .principal) {
-                    Button(action: deleteItems ) {
+                    Button(action: deleteSelection ) {
                         Label("Delete selection", systemImage: "trash")
                     }
                     .disabled(selection == [])
@@ -106,26 +103,23 @@ struct ContentView: View {
             }
         }
         Text("\(selection.count) selections")
-    }
 #endif
+    }
+    
     
     private func addItem() {
-        withAnimation {
-            let newItem = TestItem(context: viewContext)
-            newItem.timestamp = Date()
-            
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
+        let newItem = TestItem(context: viewContext)
+        newItem.timestamp = Date()
+        
+        do {
+            try viewContext.save()
+        } catch {
+            // Replace this implementation with code to handle the error appropriately.
+            let error = error as NSError
+            fatalError("Unresolved error \(error), \(error.userInfo)")
         }
     }
     
-    #if os(macOS)
     private func deleteSelection() {
         items.filter { item in selection.contains(item.id) }
             .forEach(viewContext.delete)
@@ -135,32 +129,51 @@ struct ContentView: View {
             try viewContext.save()
         } catch {
             // Replace this implementation with code to handle the error appropriately.
-            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
             let error = error as NSError
             fatalError("Unresolved error \(error), \(error.userInfo)")
         }
         selection = []
     }
-    #elseif os(iOS)
-    private func deleteItems() {
-        withAnimation {
-            items.filter { item in selection.contains(item.id) }
-                .forEach(viewContext.delete)
-//            selection.map { items[$0] }
-//                .forEach(viewContext.delete)
-            
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
+    
+#if os(iOS)
+    private func deleteItems(_ indexes: IndexSet) {
+        //                items.filter { item in selection.contains(item.id) }
+        //                    .forEach(viewContext.delete)
+        indexes.map { items[$0] }
+            .forEach(viewContext.delete)
+        
+        do {
+            try viewContext.save()
+        } catch {
+            // Replace this implementation with code to handle the error appropriately.
+            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+            let nsError = error as NSError
+            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
         }
         selection = []
     }
-    #endif
+#endif
+    
+    //#elseif os(iOS)
+    //    private func deleteItems() {
+    //        withAnimation {
+    //            items.filter { item in selection.contains(item.id) }
+    //                .forEach(viewContext.delete)
+    //            //            selection.map { items[$0] }
+    //            //                .forEach(viewContext.delete)
+    //
+    //            do {
+    //                try viewContext.save()
+    //            } catch {
+    //                // Replace this implementation with code to handle the error appropriately.
+    //                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+    //                let nsError = error as NSError
+    //                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+    //            }
+    //        }
+    //        selection = []
+    //    }
+    //#endif
 }
 
 private let itemFormatter: DateFormatter = {
@@ -177,3 +190,24 @@ struct ContentView_Previews: PreviewProvider {
             .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
+
+
+//struct ExampleView: View {
+//    @State var fruits = ["🍌", "🍏", "🍑"]
+//    
+//    var body: some View {
+//        NavigationView {
+//            List {
+//                ForEach(fruits, id: \.self) { fruit in
+//                    Text(fruit)
+//                }
+//                .onDelete { offsets in
+//                    fruits.remove(atOffsets: offsets)
+//                }
+//            }
+//            .toolbar {
+//                EditButton()
+//            }
+//        }
+//    }
+//}
